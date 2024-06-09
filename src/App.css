@@ -1,0 +1,10 @@
+.App {
+  margin: 30px;
+}
+
+.main-div {
+  padding: 30px;
+  max-width: 1200px;
+  background-color: rgb(221, 221, 221);
+  font-family: 'DM Sans', sans-serif;
+}
