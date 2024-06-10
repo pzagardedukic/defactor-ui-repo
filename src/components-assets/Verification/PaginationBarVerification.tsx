@@ -1,14 +1,15 @@
 import { Button } from "@mui/material";
 import PaginationBar from "../../components-ui-basic/Pagination/PaginationBar";
-import ArrowLeftIcon from '@mui/icons-material/ArrowLeft'; // Ensure you have this icon or use any appropriate one
+
+const IconArrowLeft = `${process.env.PUBLIC_URL}/icons/icon-arrow-left.svg`;
 
 const PaginationBarVerification: React.FC = () => {
     return (
         <PaginationBar>
             <Button
                 variant="outlined"
-                startIcon={<ArrowLeftIcon />}
-                style={{
+                startIcon={<img src={IconArrowLeft} alt="Arrow Left" />}
+                sx={{
                     fontFamily: 'DM Sans',
                     fontSize: '16px',
                     fontWeight: 700,
@@ -20,14 +21,19 @@ const PaginationBarVerification: React.FC = () => {
                     alignItems: 'center',
                     justifyContent: 'flex-start',
                     textTransform: 'capitalize',
-                    padding: '18px 24px 18px 24px',
-                    borderRadius: '100px'
+                    padding: '12px 24px 12px 24px',
+                    borderRadius: '100px',
+                    '&:hover': {
+                        backgroundColor: 'transparent',
+                        borderColor: '#43516133',
+                        color: '#435161'
+                    }
                 }}
             >
                 Tokenization settings
             </Button>
             <Button
-                style={{
+                sx={{
                     fontFamily: 'DM Sans',
                     fontSize: '14px',
                     fontWeight: 500,
@@ -35,7 +41,11 @@ const PaginationBarVerification: React.FC = () => {
                     lineHeight: '22.4px',
                     textAlign: 'center',
                     textTransform: 'capitalize',
-                    padding: '18px 24px 18px 24px'
+                    padding: '12px 24px 12px 24px',
+                    '&:hover': {
+                        backgroundColor: 'transparent',
+                        color: '#848B97'
+                    }
                 }}
             >
                 Skip this step
