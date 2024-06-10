@@ -1,18 +1,35 @@
-import { Card, CardContent, CardMedia, Typography, Grid } from '@mui/material';
+import { Card, CardContent, Typography, Grid, Button, CardMedia } from '@mui/material';
 
 interface TemplateCardProps {
   title: string;
   description: string;
-  imageUrl: string;
+  imageUrl?: string; 
 }
 
 const CardBasic: React.FC<TemplateCardProps> = ({ title, description, imageUrl }) => {
   return (
-    <Card sx={{ maxWidth: 345, boxShadow: 'none', borderRadius: '16px'}} elevation={0}>
-      <CardContent>
-        <Grid container spacing={2} alignItems="center">
+    <Card
+      sx={{
+        maxWidth: 345,
+        boxShadow: 'none',
+        borderRadius: '16px',
+        '&:hover .hover-grid': {
+          display: 'block'
+        }
+      }}
+      elevation={0}
+    >
+      <CardContent sx={{ ':last-child': { paddingBottom: '16px', cursor: 'pointer' } }}>
+        <Grid
+          container
+          spacing={2}
+          alignItems="flex-start"
+          sx={{
+            minHeight: 180
+          }}
+        >
           <Grid item xs={12}>
-            <CardMedia
+          <CardMedia
               component="img"
               height="40"
               width="40"
@@ -21,7 +38,7 @@ const CardBasic: React.FC<TemplateCardProps> = ({ title, description, imageUrl }
               sx={{ width: 'auto' }}
             />
           </Grid>
-          <Grid item xs={12} sx={{ marginTop: '36px' }}>
+          <Grid item xs={12}>
             <Typography
               variant="h5"
               component="div"
@@ -49,6 +66,28 @@ const CardBasic: React.FC<TemplateCardProps> = ({ title, description, imageUrl }
             >
               {description}
             </Typography>
+          </Grid>
+          <Grid
+            item xs={12}
+            className="hover-grid"
+            sx={{
+              display: 'none',
+              width: '100%'
+            }}
+          >
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{
+                width: '100%',
+                borderRadius: '100px',
+                backgroundColor: "#5A5BEB",
+                textTransform: 'capitalize',
+                fontSize: '12px'
+              }}
+            >
+              Preview Template
+            </Button>
           </Grid>
         </Grid>
       </CardContent>
