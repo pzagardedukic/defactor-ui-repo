@@ -1,14 +1,13 @@
 import React from 'react';
-import BtnContained from '../../components-ui-basic/BTNs/BtnContained';
-import BtnOutlined from '../../components-ui-basic/BTNs/BtnOutlined';
 import PaginationBar2 from '../../components-ui-basic/Pagination/PaginationBar2';
+import { Button } from '@mui/material';
 
 
 const TokenizationPaginationBar: React.FC = () => {
     return (
         <PaginationBar2>
-            <BtnOutlined>Back</BtnOutlined>
-            <BtnContained>Go to Minting</BtnContained>
+            <Button>Back</Button>
+            <Button>Go to Minting</Button>
         </PaginationBar2>
     )
 };

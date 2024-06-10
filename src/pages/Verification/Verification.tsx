@@ -1,8 +1,8 @@
-import AssetVerifyModal from "../../components-assets/Verification/AssetVerifyModal";
 import VerificationForm from "../../components-assets/Verification/VerificationForm";
 import BoxVerification from "../../components-assets/Verification/BoxVerification";
 import BoxInvoice from "../../components-assets/Verification/BoxInvoice";
 import PaginationBarVerification from "../../components-assets/Verification/PaginationBarVerification";
+import ModalVerification from "../../components-assets/Verification/ModalVerification";
 
 
 const Verification: React.FC = () => {
@@ -15,7 +15,7 @@ const Verification: React.FC = () => {
             <h2>-------------Pagination:</h2>
             <PaginationBarVerification />
             <h2>Verification Modal:</h2>
-            <AssetVerifyModal />
+            <ModalVerification />
         </div>
     );
 };
