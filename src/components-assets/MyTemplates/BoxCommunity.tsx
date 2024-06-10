@@ -6,8 +6,8 @@ import CommunityTemplateCard from './CommunityTemplateCard';
 
 const BoxCommunity: React.FC = () => {
     return (
-        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start', gap: 2, marginTop: 5 }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start', gap: 0, marginTop: 2}}>
+            <Box sx={{ display: 'flex', alignItems: 'strech', gap: 0 }}>
                 <Typography
                     variant="h2"
                     sx={{

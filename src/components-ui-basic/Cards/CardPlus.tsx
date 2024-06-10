@@ -8,7 +8,7 @@ interface TemplateCardProps {
 
 const CardPlus: React.FC<TemplateCardProps> = ({ title, description, imageUrl }) => {
   return (
-    <Card sx={{ maxWidth: 345, boxShadow: 'none', borderRadius: '16px', backgroundColor: 'rgba(90, 91, 235, 0.1)' }} elevation={0}>
+    <Card sx={{ boxShadow: 'none', borderRadius: '16px', backgroundColor: 'rgba(90, 91, 235, 0.1)' }} elevation={0}>
       <CardContent sx={{ ':last-child': { paddingBottom: '16px' } }}>
       <Grid container spacing={2} alignItems="center">
           <Grid item xs={12}>

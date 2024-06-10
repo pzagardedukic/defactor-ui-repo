@@ -1,44 +1,60 @@
-import { Card, CardContent, Typography, Grid, Button, CardMedia } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
+
+const iconCopyUrl = `${process.env.PUBLIC_URL}/icons/icon-copy.svg`;
 
 interface TemplateCardProps {
   title: string;
   description: string;
-  imageUrl?: string; 
+  imageUrl?: string;
 }
 
 const CardBasic: React.FC<TemplateCardProps> = ({ title, description, imageUrl }) => {
   return (
-    <Card
+    <Box
       sx={{
-        maxWidth: 345,
         boxShadow: 'none',
         borderRadius: '16px',
-        '&:hover .hover-grid': {
+        background: '#ffffff',
+        border: 'none',
+        '&:hover .hover-it': {
           display: 'block'
         }
       }}
-      elevation={0}
     >
-      <CardContent sx={{ ':last-child': { paddingBottom: '16px', cursor: 'pointer' } }}>
-        <Grid
-          container
-          spacing={2}
-          alignItems="flex-start"
-          sx={{
-            minHeight: 180
-          }}
+      <Box sx={{ padding: '16px', cursor: 'pointer' }}>
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="space-between"
+          minHeight={170}
         >
-          <Grid item xs={12}>
-          <CardMedia
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+            mb={2}
+          >
+            {imageUrl && (
+              <Box
+                component="img"
+                height="40"
+                width="40"
+                src={imageUrl}
+                alt={title}
+                sx={{ width: 'auto' }}
+              />
+            )}
+            <Box
+              className='hover-it'
               component="img"
-              height="40"
-              width="40"
-              image={imageUrl}
+              height="32"
+              width="32"
+              src={iconCopyUrl}
               alt={title}
-              sx={{ width: 'auto' }}
+              sx={{ width: 'auto', display: 'none' }}
             />
-          </Grid>
-          <Grid item xs={12}>
+          </Box>
+          <Box>
             <Typography
               variant="h5"
               component="div"
@@ -66,13 +82,13 @@ const CardBasic: React.FC<TemplateCardProps> = ({ title, description, imageUrl }
             >
               {description}
             </Typography>
-          </Grid>
-          <Grid
-            item xs={12}
-            className="hover-grid"
+          </Box>
+          <Box
+            className="hover-it"
             sx={{
               display: 'none',
-              width: '100%'
+              width: '100%',
+              mt: 2
             }}
           >
             <Button
@@ -88,10 +104,10 @@ const CardBasic: React.FC<TemplateCardProps> = ({ title, description, imageUrl }
             >
               Preview Template
             </Button>
-          </Grid>
-        </Grid>
-      </CardContent>
-    </Card>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
