@@ -27,7 +27,6 @@ const App: React.FC = () => {
         </div>
         <h1>VERIFICATION:</h1>
         <div className='main-div'>
-          <h2>Verifiction Page:</h2>
           <Verification />
         </div>
         <h1>TOKENIZATION:</h1>
