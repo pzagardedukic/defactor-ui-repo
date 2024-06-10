@@ -1,12 +1,11 @@
-import CommunityFlexWrapper from '../../components-assets/MyTemplates/CommunityFlexWrapper';
-import NewTemplateCardWrapper from '../../components-assets/MyTemplates/NewTemplateCardWrapper';
+import BoxNewTemplate from '../../components-assets/MyTemplates/BoxNewTemplate';
+import BoxCommunity from '../../components-assets/MyTemplates/BoxCommunity';
 
 const MyTemplates: React.FC = () => {
   return (
     <div className="my-templates">
-     <NewTemplateCardWrapper />
-      <h2>Community Templates</h2>
-      <CommunityFlexWrapper />
+      <BoxNewTemplate />
+      <BoxCommunity />
     </div>
   );
 };

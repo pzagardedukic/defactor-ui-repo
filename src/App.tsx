@@ -18,7 +18,6 @@ const App: React.FC = () => {
       <div className="App">
         <h1>ASSET TYPE:</h1>
         <div className='main-div'>
-          <h1>My Templates</h1>
           <MyTemplates />
         </div>
         <h1>FILL DATA:</h1>
