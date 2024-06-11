@@ -38,7 +38,7 @@ const TokenizationForm: React.FC = () => {
                 fontFamily: 'DM Sans',
                 fontSize: '12px',
                 fontWeight: 400,
-                lineHeight: '1.8em',
+                lineHeight: '3em',
                 letterSpacing: '0.01em',
                 textAlign: 'left',
                 color: '#444E5F'
@@ -56,7 +56,7 @@ const TokenizationForm: React.FC = () => {
                 fontFamily: 'DM Sans',
                 fontSize: '12px',
                 fontWeight: 400,
-                lineHeight: '1.8em',
+                lineHeight: '3em',
                 letterSpacing: '0.01em',
                 textAlign: 'left',
                 color: '#444E5F'
@@ -69,7 +69,7 @@ const TokenizationForm: React.FC = () => {
                 </IconButton>
               </Tooltip>
             </Typography>
-            <Grid container spacing={2} alignItems="center">
+            <Grid container spacing={2} alignItems="flex-start">
               <Grid item xs={12} sm={6}>
                 {links.map((link, index) => (
                   <Box key={index} display="flex" alignItems="center" width="100%">
@@ -83,7 +83,7 @@ const TokenizationForm: React.FC = () => {
                   </Box>
                 ))}
               </Grid>
-              <Grid item xs={12} sm={6} display="flex" alignItems="center" justifyContent="flex-start">
+              <Grid item xs={12} sm={6} display="flex" alignItems="flex-start" justifyContent="flex-start">
                 <Button
                   variant="text"
                   startIcon={
@@ -100,8 +100,7 @@ const TokenizationForm: React.FC = () => {
                     border: 'none',
                     textTransform: 'capitalize',
                     padding: 0,
-                    marginBottom: '10px',
-                    marginLeft: { xs: '0', sm: '16px' }
+                    margin: '16px'                    
                   }}
                 >
                   Add Link
@@ -117,10 +116,11 @@ const TokenizationForm: React.FC = () => {
                 fontFamily: 'DM Sans',
                 fontSize: '12px',
                 fontWeight: 400,
-                lineHeight: '1.8em',
+                lineHeight: '3em',
                 letterSpacing: '0.01em',
                 textAlign: 'left',
-                color: '#444E5F'
+                color: '#444E5F',
+                marginBottom: '10px'
               }}
             >
               Chain
@@ -141,7 +141,7 @@ const TokenizationForm: React.FC = () => {
                   fontFamily: 'DM Sans',
                   fontSize: '12px',
                   fontWeight: 400,
-                  lineHeight: '1.8em',
+                  lineHeight: '3em',
                   letterSpacing: '0.01em',
                   textAlign: 'left',
                   color: '#444E5F'
@@ -164,7 +164,7 @@ const TokenizationForm: React.FC = () => {
                   fontFamily: 'DM Sans',
                   fontSize: '12px',
                   fontWeight: 400,
-                  lineHeight: '1.8em',
+                  lineHeight: '3em',
                   letterSpacing: '0.01em',
                   textAlign: 'left',
                   color: '#444E5F'
@@ -222,7 +222,7 @@ const TokenizationForm: React.FC = () => {
                 fontFamily: 'DM Sans',
                 fontSize: '12px',
                 fontWeight: 400,
-                lineHeight: '1.8em',
+                lineHeight: '3em',
                 letterSpacing: '0.01em',
                 textAlign: 'left',
                 color: '#444E5F'
