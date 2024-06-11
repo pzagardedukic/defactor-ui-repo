@@ -8,9 +8,9 @@ const TokenizationCard: React.FC = () => {
     description="Lorem ipsum dolor sit amet consectetur. 
 Faucibus adipiscing phasellus."
     imageUrl={imageUrl}
-    mainBenefits1="Lorem ipsum dolor sit amet consectetur"
+    mainBenefits1="Lorem ipsum dolor sit amet consectetur."
     mainBenefits2="Lorem ipsum dolor sit amet consectetur."
-    mainBenefits3="" />;
+    mainBenefits3="Faucibus adipiscing phasellus." />;
 };
 
 
