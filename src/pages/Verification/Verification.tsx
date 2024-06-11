@@ -1,21 +1,21 @@
 import VerificationForm from "../../components-assets/Verification/VerificationForm";
-import BoxVerification from "../../components-assets/Verification/BoxVerification";
-import BoxInvoice from "../../components-assets/Verification/BoxInvoice";
-import PaginationBarVerification from "../../components-assets/Verification/PaginationBarVerification";
-import ModalVerification from "../../components-assets/Verification/ModalVerification";
+import VerificationModal from "../../components-assets/Verification/VerificationModal";
+import VerificationPaginationBar from "../../components-assets/Verification/VerificationPaginationBar";
+import VerificationInvoiceBox from "../../components-assets/Verification/VerificationInvoiceBox";
+import VerificationSixColBox from "../../components-assets/Verification/VerificationSixColBox";
 
 
 const Verification: React.FC = () => {
     return (
         <>
             <h2>Verification</h2>
-            <BoxVerification />
-            <BoxInvoice />
+            <VerificationSixColBox />
+            <VerificationInvoiceBox />
             <VerificationForm />
             <h2>-------------Pagination:</h2>
-            <PaginationBarVerification />
+            <VerificationPaginationBar />
             <h2>Verification Modal:</h2>
-            <ModalVerification />
+            <VerificationModal />
         </>
     );
 };

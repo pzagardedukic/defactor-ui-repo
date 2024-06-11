@@ -3,7 +3,7 @@ import PaginationBar from "../../components-ui-basic/Pagination/PaginationBar";
 
 const IconArrowLeft = `${process.env.PUBLIC_URL}/icons/icon-arrow-left.svg`;
 
-const PaginationBarVerification: React.FC = () => {
+const VerificationPaginationBar: React.FC = () => {
     return (
         <PaginationBar>
             <Button
@@ -54,4 +54,4 @@ const PaginationBarVerification: React.FC = () => {
     );
 };
 
-export default PaginationBarVerification;
+export default VerificationPaginationBar;

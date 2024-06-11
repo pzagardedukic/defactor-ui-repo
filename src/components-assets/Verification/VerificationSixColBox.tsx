@@ -1,7 +1,7 @@
 import { Box, Grid, Typography, Tooltip, IconButton } from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
 
-const BoxVerification: React.FC = () => {
+const VerificationSixColBox: React.FC = () => {
     const titles = ["Invoice Amount", "Debtor details", "Creditor details", "Payment Due Date", "Invoice ID", "Creditor details "];
     const paragraphs = ["1000000", "details", "details", "12/03/2025", "1231215684DT", "21/08/2023"];
 
@@ -52,4 +52,4 @@ const BoxVerification: React.FC = () => {
     );
 };
 
-export default BoxVerification;
+export default VerificationSixColBox;

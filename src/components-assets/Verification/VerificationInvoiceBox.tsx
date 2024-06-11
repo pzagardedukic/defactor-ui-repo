@@ -2,7 +2,7 @@ import { Box, Grid, Typography } from '@mui/material';
 
 const iconPdf = `${process.env.PUBLIC_URL}/icons/icon-pdf.svg`;
 
-const BoxInvoice: React.FC = () => {
+const VerificationInvoiceBox: React.FC = () => {
   return (
     <Box sx={{ flexGrow: 1, pt: 1, pb: 1 }}>
       <Grid container spacing={0}>
@@ -59,4 +59,4 @@ const BoxInvoice: React.FC = () => {
   );
 };
 
-export default BoxInvoice;
+export default VerificationInvoiceBox;

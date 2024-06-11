@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography'; 
 import CommunityTemplateCard from './CommunityTemplateCard';
 
-const BoxCommunity: React.FC = () => {
+const CommunityBox: React.FC = () => {
     return (
         <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start', gap: 0, marginTop: 2}}>
             <Box sx={{ display: 'flex', alignItems: 'strech', gap: 0 }}>
@@ -32,4 +32,4 @@ const BoxCommunity: React.FC = () => {
     );
 };
 
-export default BoxCommunity;
+export default CommunityBox;
