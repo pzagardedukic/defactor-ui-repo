@@ -7,7 +7,7 @@ interface NewCardProps {
   imageAlt: string;
 }
 
-const TemplateModal: React.FC<NewCardProps> = ({ title, description, imageUrl, imageAlt }) => {
+const ModalBasic: React.FC<NewCardProps> = ({ title, description, imageUrl, imageAlt }) => {
   return (
     <Paper style={{ padding: 30, boxShadow: 'none', border: 'none', maxWidth: '520px', margin: '0 auto'}}>
       <Card style={{ boxShadow: 'none', border: 'none' }}>
@@ -105,4 +105,4 @@ const TemplateModal: React.FC<NewCardProps> = ({ title, description, imageUrl, i
   );
 }
 
-export default TemplateModal;
+export default ModalBasic;
