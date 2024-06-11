@@ -31,7 +31,6 @@ const App: React.FC = () => {
         </div>
         <h1>TOKENIZATION:</h1>
         <div className='main-div'>
-          <h2>Tokenization Page:</h2>
           <Tokenization />
         </div>
       </div>

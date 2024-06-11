@@ -2,10 +2,14 @@ import TokenizationForm from "../../components-assets/Tokenization/TokenizationF
 import TokenizationPaginationBar from "../../components-assets/Tokenization/TokenizationPaginationBar";
 
 const Tokenization: React.FC = () => {
-    return <>
-        <TokenizationForm />
-        <TokenizationPaginationBar />
-    </>;
+    return (
+        <>
+            <h2>Tokenization</h2>
+            <TokenizationForm />
+            <TokenizationPaginationBar />
+        </>
+    );
+
 };
 
 

@@ -7,7 +7,7 @@ import ModalVerification from "../../components-assets/Verification/ModalVerific
 
 const Verification: React.FC = () => {
     return (
-        <div className="verification">
+        <>
             <h2>Verification</h2>
             <BoxVerification />
             <BoxInvoice />
@@ -16,7 +16,7 @@ const Verification: React.FC = () => {
             <PaginationBarVerification />
             <h2>Verification Modal:</h2>
             <ModalVerification />
-        </div>
+        </>
     );
 };
 
