@@ -24,7 +24,7 @@ const CardCentered: React.FC<TemplateCardProps> = ({ title, description, imageUr
       alignItems: 'center'
     }}>
       <CardHeader
-        title={<img src={imageUrl} alt="Avatar" style={{ width: 40, height: 40, borderRadius: '50%' }} />}
+        title={<img src={imageUrl} alt="Avatar" style={{ width: 48, height: 48, borderRadius: '50%' }} />}
         sx={{ alignSelf: 'center', textAlign: 'center' }}
       />
       <CardContent sx={{ textAlign: 'center' }}>
