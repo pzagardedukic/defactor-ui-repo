@@ -2,14 +2,14 @@ import VerificationForm from "../../components-assets/Verification/VerificationF
 import VerificationModal from "../../components-assets/Verification/VerificationModal";
 import VerificationPaginationBar from "../../components-assets/Verification/VerificationPaginationBar";
 import VerificationInvoiceBox from "../../components-assets/Verification/VerificationInvoiceBox";
-import VerificationSixColBox from "../../components-assets/Verification/VerificationSixColBox";
+import VerificationThreeColumnsBox from "../../components-assets/Verification/VerificationThreeColumnsBox";
 
 
 const Verification: React.FC = () => {
     return (
         <>
             <h2>Verification</h2>
-            <VerificationSixColBox />
+            <VerificationThreeColumnsBox />
             <VerificationInvoiceBox />
             <VerificationForm />
             <h2>-------------Pagination:</h2>
