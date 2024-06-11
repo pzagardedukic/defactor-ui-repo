@@ -1,17 +1,15 @@
+import React from 'react';
 import { Box, Typography, Card, CardContent, CardHeader, List, ListItem, ListItemText, ListItemIcon } from '@mui/material';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-
 
 interface TemplateCardProps {
   title: string;
   description: string;
   imageUrl?: string;
-  mainBenefits1: string;
-  mainBenefits2: string;
-  mainBenefits3: string;
+  mainBenefits: string[];
 }
 
-const CardCentered: React.FC<TemplateCardProps> = ({ title, description, imageUrl, mainBenefits1, mainBenefits2, mainBenefits3 }) => {
+const CardCentered: React.FC<TemplateCardProps> = ({ title, description, imageUrl, mainBenefits }) => {
   return (
     <Card sx={{
       borderRadius: 2,
@@ -61,33 +59,17 @@ const CardCentered: React.FC<TemplateCardProps> = ({ title, description, imageUr
             Main Benefits
           </Typography>
           <List sx={{ padding: 0, fontFamily: 'DM Sans, sans-serif' }}>
-            <ListItem sx={{ padding: 0 }}>
-              <ListItemIcon sx={{ minWidth: 'auto', marginRight: 1 }}>
-                <FiberManualRecordIcon sx={{ fontSize: 5, color: '#6B7280' }} />
-              </ListItemIcon>
-              <ListItemText
-                primary={mainBenefits1}
-                primaryTypographyProps={{ fontSize: 14, fontWeight: '400', color: '#6B7280', fontFamily: 'DM Sans, sans-serif' }}
-              />
-            </ListItem>
-            <ListItem sx={{ padding: 0 }}>
-              <ListItemIcon sx={{ minWidth: 'auto', marginRight: 1 }}>
-                <FiberManualRecordIcon sx={{ fontSize: 5, color: '#6B7280' }} />
-              </ListItemIcon>
-              <ListItemText
-                primary={mainBenefits2}
-                primaryTypographyProps={{ fontSize: 14, fontWeight: '400', color: '#6B7280', fontFamily: 'DM Sans, sans-serif' }}
-              />
-            </ListItem>
-            <ListItem sx={{ padding: 0 }}>
-              <ListItemIcon sx={{ minWidth: 'auto', marginRight: 1 }}>
-                <FiberManualRecordIcon sx={{ fontSize: 5, color: '#6B7280' }} />
-              </ListItemIcon>
-              <ListItemText
-                primary={mainBenefits3}
-                primaryTypographyProps={{ fontSize: 14, fontWeight: '400', color: '#6B7280', fontFamily: 'DM Sans, sans-serif' }}
-              />
-            </ListItem>
+            {mainBenefits.map((benefit, index) => (
+              <ListItem key={index} sx={{ padding: 0 }}>
+                <ListItemIcon sx={{ minWidth: 'auto', marginRight: 1 }}>
+                  <FiberManualRecordIcon sx={{ fontSize: 5, color: '#6B7280' }} />
+                </ListItemIcon>
+                <ListItemText
+                  primary={benefit}
+                  primaryTypographyProps={{ fontSize: 14, fontWeight: '400', color: '#6B7280', fontFamily: 'DM Sans, sans-serif' }}
+                />
+              </ListItem>
+            ))}
           </List>
         </Box>
       </CardContent>
