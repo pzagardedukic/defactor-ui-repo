@@ -1,6 +1,8 @@
 import { useDropzone } from 'react-dropzone';
 import { Typography } from '@mui/material';
 
+const iconImagePlus = `${process.env.PUBLIC_URL}/icons/icon-image-plus.svg`;
+
 interface FormDropzoneBoxOneFileProps {
   files: File[];
   setFiles: React.Dispatch<React.SetStateAction<File[]>>;
@@ -24,6 +26,7 @@ const FormDropzoneBoxOneFile: React.FC<FormDropzoneBoxOneFileProps> = ({ files, 
         ))
       ) : (
         <>
+          <img src={iconImagePlus} alt="icon" style={{ width: '50px', marginBottom: '10px' }} />
           <Typography variant="body2">Upload a file</Typography>
           <Typography variant="body2">or drag and drop here</Typography>
         </>

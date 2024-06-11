@@ -1,9 +1,10 @@
 import { useState, ChangeEvent } from 'react';
-import { TextField, Button, Tooltip, Typography, Box, Grid, Paper } from '@mui/material';
+import { TextField, Button, Tooltip, Typography, Box, Grid, Paper, IconButton } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import InfoIcon from '@mui/icons-material/Info';
 import ButtonPublish from '../../components-ui-basic/Buttons/ButtonPublish';
 import FormDropzoneBoxOneFile from '../../components-ui-basic/Form/FormDropzoneBoxOneFile';
+import TokenizationCard from './TokenizationCard';
 
 const TokenizationForm: React.FC = () => {
   const [links, setLinks] = useState<string[]>(['']);
@@ -24,16 +25,39 @@ const TokenizationForm: React.FC = () => {
       <form>
         <Grid container spacing={3}>
           <Grid item xs={12}>
-            <Typography variant="caption">Taken Icon</Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontFamily: 'DM Sans',
+                fontSize: '12px',
+                fontWeight: 400,
+                lineHeight: '1.8em',
+                letterSpacing: '0.01em',
+                textAlign: 'left',
+                color: '#444E5F'
+              }}
+            >Taken Icon</Typography>
             <FormDropzoneBoxOneFile files={files} setFiles={setFiles} />
           </Grid>
 
           <Grid item xs={12}>
-            <Typography variant="h6">
-              Link{' '}
-              <Tooltip title="You can add multiple links">
-                <InfoIcon fontSize="small" />
-              </Tooltip>
+            <Typography
+              variant="h6"
+              sx={{
+                fontFamily: 'DM Sans',
+                fontSize: '12px',
+                fontWeight: 400,
+                lineHeight: '1.8em',
+                letterSpacing: '0.01em',
+                textAlign: 'left',
+                color: '#444E5F'
+              }}
+            >
+              Link
+              <Tooltip title="Info about this field">
+                <IconButton size="small" sx={{ paddingBottom: '7px' }}>
+                  <InfoIcon fontSize="inherit" />
+                </IconButton></Tooltip>
             </Typography>
             {links.map((link, index) => (
               <Box key={index} display="flex" alignItems="center">
@@ -55,17 +79,72 @@ const TokenizationForm: React.FC = () => {
           </Grid>
 
           <Grid item xs={12}>
-            <Typography variant="h6">Price</Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontFamily: 'DM Sans',
+                fontSize: '12px',
+                fontWeight: 400,
+                lineHeight: '1.8em',
+                letterSpacing: '0.01em',
+                textAlign: 'left',
+                color: '#444E5F'
+              }}
+            >
+              Chain
+              <Tooltip title="Info about this field">
+                <IconButton size="small" sx={{ paddingBottom: '7px' }}>
+                  <InfoIcon fontSize="inherit" />
+                </IconButton></Tooltip>
+            </Typography>
+            <TokenizationCard />
+          </Grid>
+
+          <Grid item xs={12}>
+            <Typography
+              variant="h6"
+              sx={{
+                fontFamily: 'DM Sans',
+                fontSize: '12px',
+                fontWeight: 400,
+                lineHeight: '1.8em',
+                letterSpacing: '0.01em',
+                textAlign: 'left',
+                color: '#444E5F'
+              }}
+            >Price</Typography>
             <TextField fullWidth type="number" margin="normal" />
           </Grid>
 
           <Grid item xs={12}>
-            <Typography variant="h6">Token Numbers</Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontFamily: 'DM Sans',
+                fontSize: '12px',
+                fontWeight: 400,
+                lineHeight: '1.8em',
+                letterSpacing: '0.01em',
+                textAlign: 'left',
+                color: '#444E5F'
+              }}
+            >Token Numbers</Typography>
             <TextField fullWidth type="number" margin="normal" />
           </Grid>
 
           <Grid item xs={12}>
-            <Typography variant="h6">Description</Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontFamily: 'DM Sans',
+                fontSize: '12px',
+                fontWeight: 400,
+                lineHeight: '1.8em',
+                letterSpacing: '0.01em',
+                textAlign: 'left',
+                color: '#444E5F'
+              }}
+            >Description</Typography>
             <TextField fullWidth multiline rows={4} margin="normal" />
           </Grid>
 

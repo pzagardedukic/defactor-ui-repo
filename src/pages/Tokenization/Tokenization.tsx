@@ -6,6 +6,7 @@ const Tokenization: React.FC = () => {
         <>
             <h2>Tokenization</h2>
             <TokenizationForm />
+            <h2>----------Tokenization Pagination</h2>
             <TokenizationPaginationBar />
         </>
     );
