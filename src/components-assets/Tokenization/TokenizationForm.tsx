@@ -1,10 +1,10 @@
 import TokenizationCard from "./TokenizationCard";
-import UploadOneFile from "../../components-ui-basic/Form/UploadOneFile";
+import FormDropzoneBoxOneFile from "../../components-ui-basic/Form/FormDropzoneBoxOneFile";
 
 const TokenizationForm: React.FC = () => {
     return <div>
     <p>TokenIcon</p> 
-    <UploadOneFile />
+    <FormDropzoneBoxOneFile />
     <p>link and add links inputs</p>
     <p>Chain</p>
     <TokenizationCard />
