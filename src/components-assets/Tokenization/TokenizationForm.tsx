@@ -10,7 +10,6 @@ const iconTooltip = `${process.env.PUBLIC_URL}/icons/icon-tooltip.svg`;
 const TokenizationForm: React.FC = () => {
   const [links, setLinks] = useState<string[]>(['']);
   const [files, setFiles] = useState<File[]>([]);
-  const isMobile = useMediaQuery('(max-width:600px)');
 
   const handleLinkChange = (index: number, event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const newLinks = [...links];
@@ -23,15 +22,14 @@ const TokenizationForm: React.FC = () => {
   };
 
   const createSPF = () => {
-    // Add functionality for creating SPF here
     console.log('Create SPF clicked');
   };
 
   return (
-    <Paper style={{ backgroundColor: 'transparent', padding: '32px' }}>
+    <Paper style={{ backgroundColor: 'transparent', paddingTop: '24px', boxShadow: 'none' }}>
       <form>
-        <Grid container spacing={3}>
-          <Grid item xs={12}>
+        <Grid container spacing={3} sx={{ paddingLeft: '0px' }}>
+          <Grid item xs={12} sx={{ paddingLeft: '0px' }}>
             <Typography
               variant="h6"
               sx={{
@@ -49,7 +47,7 @@ const TokenizationForm: React.FC = () => {
             <FormDropzoneBoxOneFile files={files} setFiles={setFiles} />
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{ paddingLeft: '0px' }}>
             <Typography
               variant="h6"
               sx={{
@@ -70,7 +68,7 @@ const TokenizationForm: React.FC = () => {
               </Tooltip>
             </Typography>
             <Grid container spacing={2} alignItems="flex-start">
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} sm={6} sx={{ paddingLeft: '0px' }}>
                 {links.map((link, index) => (
                   <Box key={index} display="flex" alignItems="center" width="100%">
                     <TextField
@@ -100,7 +98,7 @@ const TokenizationForm: React.FC = () => {
                     border: 'none',
                     textTransform: 'capitalize',
                     padding: 0,
-                    margin: '16px'                    
+                    margin: '16px'
                   }}
                 >
                   Add Link
@@ -109,7 +107,7 @@ const TokenizationForm: React.FC = () => {
             </Grid>
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{ paddingLeft: '0px' }}>
             <Typography
               variant="h6"
               sx={{
@@ -133,8 +131,8 @@ const TokenizationForm: React.FC = () => {
             <TokenizationCard />
           </Grid>
 
-          <Grid item xs={12} container spacing={2}>
-            <Grid item xs={12} sm={6}>
+          <Grid item xs={12} container spacing={2} sx={{ paddingLeft: '0px' }}>
+            <Grid item xs={12} sm={6} sx={{ paddingLeft: '0px' }}>
               <Typography
                 variant="h6"
                 sx={{
@@ -157,7 +155,7 @@ const TokenizationForm: React.FC = () => {
               <TextField fullWidth type="number" margin="normal" sx={{ mt: 0 }} />
             </Grid>
 
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={6} sx={{ paddingLeft: '0px' }}>
               <Typography
                 variant="h6"
                 sx={{
@@ -181,7 +179,7 @@ const TokenizationForm: React.FC = () => {
             </Grid>
           </Grid>
 
-          <Grid item xs={12} spacing={0}>
+          <Grid item xs={12} sx={{ paddingLeft: '0px' }}>
             <Grid container alignItems="center" spacing={0}>
               <Grid item>
                 <Button
@@ -215,7 +213,7 @@ const TokenizationForm: React.FC = () => {
             </Grid>
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{ paddingLeft: '0px' }}>
             <Typography
               variant="h6"
               sx={{
@@ -233,9 +231,7 @@ const TokenizationForm: React.FC = () => {
             <TextField fullWidth multiline rows={4} margin="normal" sx={{ mt: 0 }} />
           </Grid>
 
-
-
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{ paddingLeft: '0px' }}>
             <ButtonPublish />
           </Grid>
         </Grid>
