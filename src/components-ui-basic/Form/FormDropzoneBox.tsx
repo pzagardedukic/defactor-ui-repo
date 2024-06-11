@@ -5,7 +5,7 @@ interface DropzoneBoxProps {
   getInputProps: () => any;
 }
 
-const DropzoneBox: React.FC<DropzoneBoxProps> = ({ getRootProps, getInputProps }) => {
+const FormDropzoneBox: React.FC<DropzoneBoxProps> = ({ getRootProps, getInputProps }) => {
   return (
     <Box
       {...getRootProps()}
@@ -30,4 +30,4 @@ const DropzoneBox: React.FC<DropzoneBoxProps> = ({ getRootProps, getInputProps }
   );
 };
 
-export default DropzoneBox;
+export default FormDropzoneBox;

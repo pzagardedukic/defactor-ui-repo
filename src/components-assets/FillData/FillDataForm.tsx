@@ -1,6 +1,6 @@
 import { Box, Button, TextField, Typography, Grid } from '@mui/material';
 import { useDropzone } from 'react-dropzone';
-import DropzoneBox from '../../components-ui-basic/Form/DropzoneBox';
+import FormDropzoneBox from '../../components-ui-basic/Form/FormDropzoneBox';
 
 const FillDataForm: React.FC = () => {
   const { getRootProps: getPhotosRootProps, getInputProps: getPhotosInputProps } = useDropzone();
@@ -70,15 +70,15 @@ const FillDataForm: React.FC = () => {
       <Typography variant="h6" component="div" sx={{ mt: 2 }}>
         Photos
       </Typography>
-      <DropzoneBox getRootProps={getPhotosRootProps} getInputProps={getPhotosInputProps} />
+      <FormDropzoneBox getRootProps={getPhotosRootProps} getInputProps={getPhotosInputProps} />
       <Typography variant="h6" component="div" sx={{ mt: 2 }}>
         Ownership Records
       </Typography>
-      <DropzoneBox getRootProps={getRecordsRootProps} getInputProps={getRecordsInputProps} />
+      <FormDropzoneBox getRootProps={getRecordsRootProps} getInputProps={getRecordsInputProps} />
       <Typography variant="h6" component="div" sx={{ mt: 2 }}>
         Proves
       </Typography>
-      <DropzoneBox getRootProps={getProvesRootProps} getInputProps={getProvesInputProps} />
+      <FormDropzoneBox getRootProps={getProvesRootProps} getInputProps={getProvesInputProps} />
       <Button variant="contained" color="primary" type="submit" sx={{ mt: 2 }}>
         Submit
       </Button>
