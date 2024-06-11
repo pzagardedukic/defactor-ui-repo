@@ -3,7 +3,6 @@ import TokenizationPaginationBar from "../../components-assets/Tokenization/Toke
 
 const Tokenization: React.FC = () => {
     return <>
-        <h2>Tokenization</h2>
         <TokenizationForm />
         <TokenizationPaginationBar />
     </>;
