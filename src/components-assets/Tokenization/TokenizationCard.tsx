@@ -1,4 +1,3 @@
-import React from 'react';
 import CardCentered from "../../components-ui-basic/Cards/CardCentered";
 
 const imageUrl = `${process.env.PUBLIC_URL}/icons/icon-eth.svg`;
