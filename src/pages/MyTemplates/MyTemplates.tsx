@@ -1,11 +1,11 @@
-import NewTemplateBox from '../../components-assets/MyTemplates/NewTemplateBox';
-import CommunityBox from '../../components-assets/MyTemplates/CommunityBox';
+import MyTemplatesNewTemplateBox from '../../components-assets/MyTemplates/MyTemplatesNewTemplateBox';
+import MyTemplatesCommunityBox from '../../components-assets/MyTemplates/MyTemplatesCommunityBox';
 
 const MyTemplates: React.FC = () => {
   return (
     <>
-      <NewTemplateBox />
-      <CommunityBox />
+      <MyTemplatesNewTemplateBox />
+      <MyTemplatesCommunityBox />
     </>
   );
 };

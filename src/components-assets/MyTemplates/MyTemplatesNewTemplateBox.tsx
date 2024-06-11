@@ -1,8 +1,8 @@
 import { Box, Grid, Typography } from '@mui/material';
 import GridViewIcon from '@mui/icons-material/GridView';
-import NewTemplateCard from './NewTemplateCard';
+import NewTemplateCard from './MyTemplatesNewTemplateCard';
 
-const NewTemplateBox: React.FC = () => {
+const MyTemplatesNewTemplateBox: React.FC = () => {
   return (
     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start', gap: 2 }}>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
@@ -29,4 +29,4 @@ const NewTemplateBox: React.FC = () => {
   );
 };
 
-export default NewTemplateBox;
+export default MyTemplatesNewTemplateBox;

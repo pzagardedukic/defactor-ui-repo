@@ -2,9 +2,9 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography'; 
-import CommunityTemplateCard from './CommunityTemplateCard';
+import CommunityTemplateCard from './MyTemplatesCommunityTemplateCard';
 
-const CommunityBox: React.FC = () => {
+const MyTemplatesCommunityBox: React.FC = () => {
     return (
         <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start', gap: 0, marginTop: 2}}>
             <Box sx={{ display: 'flex', alignItems: 'strech', gap: 0 }}>
@@ -32,4 +32,4 @@ const CommunityBox: React.FC = () => {
     );
 };
 
-export default CommunityBox;
+export default MyTemplatesCommunityBox;
